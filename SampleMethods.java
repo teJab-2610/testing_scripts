@@ -1,13 +1,16 @@
 public class SampleMethods {
 
     // Method with conditional statement (if-else)
-    public static int max(int a, int b) {
-        if (a > b) {
+    public static int max(int a, int b, int c) { // Modified method signature to accept three integers
+        if (a > b && a > c) { // Modified condition to check against a third integer
             return a;
-        } else {
+        } else if (b > a && b > c) { // Added condition to check against a third integer
             return b;
+        } else {
+            return c;
         }
     }
+
 
     // Method with loop (for)
     public static int factorial(int n) {
@@ -40,9 +43,7 @@ public class SampleMethods {
             case 6:
                 dayName = "Friday";
                 break;
-            case 7:
-                dayName = "Saturday";
-                break;
+           
             default:
                 dayName = "Invalid day";
         }
@@ -57,6 +58,9 @@ public class SampleMethods {
             num /= 10;
         }
         return sum;
+    }
+     public static double calculateHypotenuse(double side1, double side2) {
+        return Math.sqrt(side1 * side1 + side2 * side2); // Calculates the hypotenuse of a right triangle
     }
 
     public static void main(String[] args) {
