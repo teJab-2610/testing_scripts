@@ -1,5 +1,5 @@
 ## Dependencies
-This tool uses pyproject 0.1.17.
+This tool uses pyproject 0.1.14.
 ## How to install
 Go to the "myApp" folder in the root directory
 ~~~yaml
